@@ -56,22 +56,28 @@
 						thread lining.</span
 					>
 					<div class="button-group">
-						<button type="button">
-							<img src="images\icons\shopping-bag.webp" />Add To Cart
+						<button type="button" onclick="showmessage('done-message')">
+							<img src="images\icons\shopping-bag.webp" alt="" />Add To Cart
 						</button>
-						<button type="button">
-							<img src="images\icons\play.webp" />Watch Intro
+						<button type="button" onclick="showmessage('error-message')">
+							<img src="images\icons\play.webp" alt="" />Watch Intro
 						</button>
+						<div class="send-message done-message opacity-zero">
+							<p>Product added to cart</p>
+						</div>
+						<div class="send-message error-message opacity-zero">
+							<p>Intro not found</p>
+						</div>
 					</div>
 				</div>
 
-				<img src="images\image.webp" class="banner-img" />
+				<img src="images\image.webp" class="banner-img" alt="running shoes" />
 				<span class="image-decoration">94</span>
 				<span class="foot-decoration">01 / 04</span>
 				<ul class="header">
-					<li><img src="images\icons\search.webp" /></li>
-					<li><img src="images\icons\person.webp" /></li>
-					<li><img src="images\icons\basket.webp" /></li>
+					<li><img src="images\icons\search.webp" alt="" /></li>
+					<li><img src="images\icons\person.webp" alt="" /></li>
+					<li><img src="images\icons\basket.webp" alt="" /></li>
 				</ul>
 
 				<ul class="leftbar-list">
@@ -87,5 +93,6 @@
 				</ul>
 			</div>
 		</div>
+		<script src="js\scripts.js"></script>
 	</body>
 </html>
